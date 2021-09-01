@@ -40,5 +40,6 @@ if (script.supports('bundlepreload')) {
 - Spec issue: https://github.com/whatwg/html/issues/6472
 - Spec change prototype: https://github.com/whatwg/html/compare/main...horo-t:HTMLScriptElement_supports
 - Chrome Platform Status: https://www.chromestatus.com/feature/5712146835963904
+- Chromium tracking issue: https://crbug.com/1245528
 - Chromium prototype CL: https://chromium-review.googlesource.com/c/chromium/src/+/3133553
 
