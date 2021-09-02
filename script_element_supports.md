@@ -4,8 +4,7 @@ Author: horo@chromium.org - Last Updated: 2021-09-01
 
 ## Summary
 
-Provides a unified way to detect new features (ex: importmap, speculationrules) which use the script element.
-
+Provides a unified way to detect new features that use script elements.
 
 ## Motivation
 
@@ -35,6 +34,16 @@ if (script.supports('bundlepreload')) {
 }
 ```
 
+## Security Considerations
+
+There are no known security impacts of this API.
+
+## Privacy Considerations
+
+This API can be used for fingerprinting by checking the availability of each feature.
+However, the Web Platform Design Principles require that each feature be [detectable](https://w3ctag.github.io/design-principles/#feature-detect).
+And this API itself only introduces one bit of information about the availability of the API itself.
+
 ## Links
 
 - Spec issue: https://github.com/whatwg/html/issues/6472
@@ -42,4 +51,4 @@ if (script.supports('bundlepreload')) {
 - Chrome Platform Status: https://www.chromestatus.com/feature/5712146835963904
 - Chromium tracking issue: https://crbug.com/1245528
 - Chromium prototype CL: https://chromium-review.googlesource.com/c/chromium/src/+/3133553
-
+- Security and Privacy self-review: [script_element_supports_security_and_privacy_review.md](script_element_supports_security_and_privacy_review.md)
