@@ -39,9 +39,13 @@ There are no known security impacts of this API.
 
 ## Privacy Considerations
 
-This API can be used for fingerprinting by checking the availability of each feature.
-However, the Web Platform Design Principles require that each feature be [detectable](https://w3ctag.github.io/design-principles/#feature-detect).
-And this API itself only introduces one bit of information about the availability of the API itself.
+This API can be used as part of browser fingerprinting technique of checking the
+availability of each feature. However, in general, these are already
+[feature-detectable][feature-detect]
+by asynchronous way or by fetching useless HTTP requests.
+This API itself only introduces one bit of information about the availability of
+the API itself. But, this is also the case when introducing any other new
+[feature-detectable][feature-detect] APIs.
 
 ## Links
 
@@ -51,3 +55,6 @@ And this API itself only introduces one bit of information about the availabilit
 - Chromium tracking issue: https://crbug.com/1245528
 - Chromium prototype CL: https://chromium-review.googlesource.com/c/chromium/src/+/3133553
 - Security and Privacy self-review: [script_element_supports_security_and_privacy_review.md](script_element_supports_security_and_privacy_review.md)
+
+
+[feature-detect]:https://w3ctag.github.io/design-principles/#feature-detect
