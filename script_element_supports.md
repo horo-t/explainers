@@ -22,14 +22,13 @@ If we have the `HTMLScriptElement.supports(type)` method which is like `HTMLLink
 ## Usage
 
 ```javascript
-const script = document.createElement('script');
-if (script.supports('importmap')) {
+if (HTMLScriptElement.supports('importmap')) {
   console.log('Your browser supports import maps.');
 }
-if (script.supports('speculationrules')) {
+if (HTMLScriptElement.supports('speculationrules')) {
   console.log('Your browser supports speculationrules.');
 }
-if (script.supports('bundlepreload')) {
+if (HTMLScriptElement.supports('bundlepreload')) {
   console.log('Your browser supports bundlepreload.');
 }
 ```
