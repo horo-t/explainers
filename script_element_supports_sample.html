@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTMLScriptElement.supports(type) method sample</title>
+</head>
+<body>
+  <h1>HTMLScriptElement.supports(type) method sample</h1>
+<script>
+(() => {
+function log(text) {
+  const div = document.createElement('div');
+  div.appendChild(document.createTextNode(text));
+  document.body.appendChild(div);
+}
+
+if (!('supports' in HTMLScriptElement)) {
+  log('Your browser doesn\'t support HTMLScriptElement.supports() method.');
+  log('Please open this page with Chrome (>=95.0.4635.1) after enabling ' +
+      'chrome://flags/#enable-experimental-web-platform-features flag or ' +
+      'adding "--enable-blink-features=ScriptElementSupports" command-line ' +
+      'switche.');
+  return;
+}
+log('Your browser supports HTMLScriptElement.supports() method.');
+
+const list = [
+  'classic',
+  'module',
+  'importmap',
+  'speculationrules'];
+for (let type of list) {
+  if (HTMLScriptElement.supports(type)) {
+    log('Your browser supports "' + type + '"');
+  } else {
+    log('Your browser doesn\'t support "' + type + '"');
+  }
+}
+})();
+</script>
+</body>
