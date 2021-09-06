@@ -56,6 +56,7 @@ the API itself. But, this is also the case when introducing any other new
 - Chromium tracking issue: https://crbug.com/1245528
 - Chromium prototype CL: https://chromium-review.googlesource.com/c/chromium/src/+/3133553
 - Security and Privacy self-review: [script_element_supports_security_and_privacy_review.md](script_element_supports_security_and_privacy_review.md)
+- How to use: [script_element_supports_how_to.md](script_element_supports_how_to.md)
 - Sample: https://horo-t.github.io/explainers/script_element_supports_sample.html
 
 
