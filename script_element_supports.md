@@ -49,6 +49,7 @@ the API itself. But, this is also the case when introducing any other new
 
 ## Links
 
+- Spec: https://html.spec.whatwg.org/multipage/scripting.html#dom-script-supports
 - Spec issue: https://github.com/whatwg/html/issues/6472
 - Spec pull request: https://github.com/whatwg/html/pull/7008
 - Chrome Platform Status: https://www.chromestatus.com/feature/5712146835963904
