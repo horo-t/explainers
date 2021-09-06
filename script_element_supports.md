@@ -1,6 +1,6 @@
 # HTMLScriptElement.supports(type) method
 
-Author: horo@chromium.org - Last Updated: 2021-09-01
+Author: horo@chromium.org - Last Updated: 2021-09-06
 
 ## Summary
 
